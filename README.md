@@ -1,2 +1,16 @@
-# PSA - Password Strength Analyzer
- PSA is a Password Strength Analyzer. It evaluates how strong (or weak) a password is using entropy and common patterns.
+# 🔐 Password Strength Checker
+
+A Python tool that analyzes the strength of a password using several criteria:
+
+- ✅ Minimum **12 characters**
+- ✅ Uppercase letters
+- ✅ Lowercase letters
+- ✅ Numbers
+- ✅ Special characters
+
+## 🚀 How to Run
+
+Make sure Python is installed, then run:
+
+```bash
+python checker.py
