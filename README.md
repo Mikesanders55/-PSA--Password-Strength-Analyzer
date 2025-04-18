@@ -13,4 +13,4 @@ A Python tool that analyzes the strength of a password using several criteria:
 Make sure Python is installed, then run:
 
 ```bash
-python checker.py
+python analyzer.py
