@@ -1,5 +1,5 @@
 import re
-import getpass
+import pwinput
 
 def check_password_strength(password):
     score = 0
@@ -40,8 +40,9 @@ def check_password_strength(password):
     return rating, reasons
 
 if __name__ == "__main__":
-    pwd = getpass.getpass("🔐 Enter a password to check (input is hidden): ")
-    print("🔎 Analyzing...\n")
+    # Show asterisks (*) while user types password
+    pwd = pwinput.pwinput(prompt="🔐 Enter a password to check: ")
+    print("\n🔎 Analyzing...\n")
 
     rating, feedback = check_password_strength(pwd)
     print(f"💬 Password Strength: {rating}\n")
